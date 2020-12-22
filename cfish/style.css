@@ -1,0 +1,122 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #e6ffff;
+}
+.header{
+	color: white;
+	background-color: #085952;
+	text-align: center;
+	border-bottom: 2px solid #e69500;
+}
+.header h1{
+	font-size: 28px;
+	display: inline-block;
+	padding: 20px 0px;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-shadow: 1px 0px 2px black;
+}
+.logoimg1, .logoimg2{
+	width: 50px;
+	height: auto;
+	padding: 0px 10px;
+	display: inline-block;
+}
+.descr{
+	text-align: center;
+	padding: 15px 50px;
+	border-bottom: 1px dotted #e69500;
+}
+h2{
+	color: #085952;
+	font-size: 22px;
+	text-indent: 2em;
+	margin: 5px;
+}
+.quiz, .lorem, .lorem2{
+	margin: 20px;
+}
+.quiz{
+	font-size: 90%;
+	display: inline-block;
+	float: left;
+	width: auto;
+	min-height: 221px;
+}
+.nav{
+	display: inline-block;
+	margin: 20px;
+	padding: 10px 20px 10px 20px;
+	border: 1px solid #085952;
+	border-radius: 8pt;
+	width: auto;
+	min-height: 221px;
+}
+.nav ul{
+	list-style: square;
+	padding-left: 20px;
+}
+.nav ul a{
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #ffcccc;
+	line-height: 150%;
+}
+.nav ul a:link{
+	color: #085952;
+}
+.nav ul a:hover{
+	color: #e69500;
+}
+.nav ul a:visited{
+	color: purple;
+}
+.nav ul a:active{
+	color: red;
+}
+.lorem, .lorem2{
+	text-indent: 2em;
+	background-position: 50% 50%;
+	text-align: justify;
+	clear: both;
+}
+.lorem{
+	background-image: url("images/fishy_giphy.gif");
+}
+.lorem2{
+	background-image: url("images/loop_fish.gif");
+}
+.footer{
+	color: grey;
+	background-color: #085952;
+	text-align: center;
+	padding: 20px 10px;
+	letter-spacing: 1px;
+	text-shadow: 1px 0px 2px black;
+	border-top: 2px solid #e69500;
+}
+.quiz, .lorem, .lorem2{
+	border: 1px solid #085952;
+	border-radius: 8pt;
+	padding: 10px 20px;
+}
+
+@media only screen and (max-width:960px) {
+	.logoimg1{
+		display: none;
+	}
+	.logoimg2{
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+	.header h1{
+		padding: 20px 0px 10px 0px;
+	}
+	.
+}
