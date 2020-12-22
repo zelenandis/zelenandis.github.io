@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-
 <head>
 	<title>Cyber-fishing</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 </head>
 
+<body>
 
-<body style="background-color: #e6ffff">
-	<h2 style="text-align: center; color: #085952">Добро пожаловать на страницу о кибер-рыбалке!</h2>
-	<p>Это место для тех, кто увлечён ловлей рыб в пространствах компьютерных игр, а также для тех, кому не безразличны всплески заэкранного поплавка.</p><hr>
-	<p><h3>Опрос</h3></p>(скоро будет доработан)<hr>
-	<p><h3>Меню</h3></p><br>
-	<a href="wow.html">Рыбалка в World of Warcraft</a><br>
-	<a href="mc.html">Рыбалка в Minecraft</a><br>
-	<a href="eso.html">Рыбалка в The Elder Scrolls Online</a><br>
-	<a href="sim.html">Рыбалка в The Sims 4</a><br>
-	<a href="sw.html">Рыбалка в Stardew Valley</a><br>
-	<a href="mtap.html">Рыбалка в My Time At Portia</a><br><hr>
-	<div style="background-image: url('images/loop_fish.gif');">
-	<p>здесь<br>возможно<br>будет<br>и<br>остальная<br>всякая<br>информация<br>про<br>кибер-рыбалку<br>и<br>прочие<br>штуки<br>тоже,<br>так<br>как<br>сайт<br>в<br>разработке<br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p>
+	<div class="header">
+		<img src="images/fish.gif" alt="fish" class="logoimg1">
+		<h1>Добро пожаловать на страницу о кибер-рыбалке!</h1>
+		<img src="images/fish.gif" alt="fish" class="logoimg2">
 	</div>
-	<hr>
-	<p><h3>Игра с секундомером</h3></p>
-	<p>На картинке три нажимабельных места, ведущие куда попало!</p>
-	<div class="usemap">
-				<figure>
-				<img src="images/watch.jpg" alt="Секундомер" usemap="#watch">
-					<map name="watch">
-						<area shape="rect" alt="часть на секундомере" coords="134,66,183,92" href="https://google.com" target="_blank" onclick=""> <!-- зачем тут онклик? что он делает? -->
-						<area shape="circle" alt="круг на секундомере" coords="170,220,32" href="https://256.ru" target="_blank">
-						<area shape="poly" alt="произвольность на секундомере" coords="39,131,73,104,103,140,110,186,63,172" href="http://365.ru" target="_blank">
-					</map>
-				<figcaption>СТОПЧАСЫЫЫ</figcaption>
-				</figure>
-			</div>
-	<hr>
-	<span style="color: #009933"><small>@zelenandis</small></span>
+	
+	<div class="descr">
+		Это место для тех, кто увлечён ловлей рыб в пространствах компьютерных игр, а также для тех, кому не безразличны всплески заэкранного поплавка.
+	</div>
+	
+	<div class="quiz">
+		<h2>Опрос</h2>
+		<div class="smfont">
+			</p>В каких играх вы уже пробовали рыбачить?<p><br>
+			<form>
+				<input type="checkbox" id="wow" name="wow" value="yes"><label for="wow"> World of Warcraft</label><br>
+				<input type="checkbox" id="mc" name="mc" value="yes"><label for="mc"> Minecraft</label><br>
+				<input type="checkbox" id="eso" name="eso" value="yes"><label for="eso"> The Elder Scrolls Online</label><br>
+				<input type="checkbox" id="sim" name="sim" value="yes"><label for="sim"> The Sims 4</label><br>
+				<input type="checkbox" id="sw" name="sw" value="yes"><label for="sw"> Stardew Valley</label><br>
+				<input type="checkbox" id="mtap" name="mtap" value="yes"><label for="mtap"> My Time At Portia</label><br><br>
+				<input type="submit" valie="subm">
+			</form>
+		</div>
+	</div>
+	
+	<div class="nav">
+		<h2>Меню</h2>
+		<ul>
+			<li><a href="wow.html">Рыбалка в World of Warcraft</a></li>
+			<li><a href="mc.html">Рыбалка в Minecraft</a></li>
+			<li><a href="eso.html">Рыбалка в The Elder Scrolls Online</a></li>
+			<li><a href="sim.html">Рыбалка в The Sims 4</a></li>
+			<li><a href="sw.html">Рыбалка в Stardew Valley</a></li>
+			<li><a href="mtap.html">Рыбалка в My Time At Portia</a></li>
+		</ul>
+	</div>
+	
+	<div class="lorem">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	
+	<div class="lorem2">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	
+	<div class="footer">
+		@zelenandis
+	</div>
 	
 </body>
 
-
 </html>
-
