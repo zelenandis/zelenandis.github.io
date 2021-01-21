@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru-RU" lang="en"> <!-- choose one -->
+
+<head>
+	<title>JavaScript пробное</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+
+<body>
+	<div class="maindiv">
+
+	<div class="content">
+		<script src="app.js"></script>
+		<h1>Генератор пословиц</h1>
+
+		<p>Для того, чтобы создать пословицу, введите <span class="wow">существительное и прилагательное</span>; затем щёлкните на кнопке "Чтобы создать пословицу, щёлкните здесь", которая находится внизу.</p>
+		<p>Если вы ошиблись, или хотите начать сначала, щёлкните на кнопке "Очистить форму".</p>
+
+		<form name="proverbForm">
+			<p>Существительное:
+			<input name="userNoun" size="25"></p>
+			<p>Прилагательное:
+			<input name="userAdjective" size="25"></p>
+			<input type="button" id="button" name="proverbButton" value="Чтобы создать пословицу, щелкните здесь" onClick="displayProverb(document.proverbForm.userNoun.value, document.proverbForm.userAdjective.value)">
+			<input type="reset" value="Очистить форму">
+		</form>
+<!--
+		<div class="reswind">
+			<p>Ваша пословица:</p>
+			<div id="poslov" class="brcolor"></div>
+		</div>
+-->
+		
+	</div>
+
+	<div class="content">
+		<script src="app2.js"></script>
+
+		<h1>Грубый счетчик запасов</h1>
+		<p>Вы можете посчитать, <span class="wow">на сколько месяцев</span> хватит ваших запасов. Для этого введите ваши данные ниже в форму и нажмите "Посчитать результат".</p>
+
+		<form name="salesForm">
+			<p>Ваш общий запас (шт) на сегодняшний день: <input id="userStock" size="4"></p>
+			<p>Продажи (шт) за 1 месяц: <input id="userMonthSale" size="4"></p>
+			<p><input type="button" id="buttonSales" value="Посчитать результат" onClick="salesculc()"></p>
+			<p><input type="reset" value="Очистить"></p>
+		</form>
+
+		<div class="reswind">
+			<p>Ответ:</p>
+			<div id="salesres" class="brcolor"></div>
+		</div>
+
+	</div>
+
+	<div class="content">
+		<h1>Кукулятор</h1>
+		<p>очень базовая <span class="wow">куку</span>ляция</p>
+
+		<form>
+			Значение 1 - <input type="text" id="value1" size="10"><br>
+			Значение 2 - <input type="text" id="value2" size="10"><br>
+			Действие: 
+			<select id="operator">
+				<option value="add">Скукнуть</option>
+				<option value="min">Выкукнуть</option>
+				<option value="div">Разкукнить</option>
+				<option value="mul">Перекукнуть</option>
+			</select>
+			<button type="button" onclick="calc()">Да!</button><br>
+			<input type="reset" value="Сброс">
+		</form>
+
+		<div class="reswind">
+			<p>Ответ:</p>
+			<div id="resultCalc" class="brcolor"></div>
+		</div>
+
+		<script src="app3.js"></script>
+	</div>
+
+	<div class="content">
+		<h1>Калькулятор роста (важно!)</h1>
+		<form>
+			Введите ваш <span class="wow">рост</span>
+			<input size="4" id="valuerost">
+			см
+			<br><input type="button" value="OK" id="rostbutton" onclick="rostmagiccalc()">
+		</form>
+
+		<script src="app4.js"></script>
+
+	</div>
+
+	</div>
+</body>
+	
+</html>

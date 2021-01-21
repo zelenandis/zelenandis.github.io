@@ -1,0 +1,39 @@
+body{
+    background-color: #789974;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+    color: #D5747A;
+    font-size: 26px;
+}
+.maindiv{
+    padding: 0 2px;
+}
+.content{
+    background-color: #F6EDD9;
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 1px 1px 12px rgb(78, 78, 78);
+    border-radius: 1%;
+    font-size: 15px;
+    max-width: 700px;
+    min-width: 270px;
+    padding-bottom: 2em;
+}
+.brcolor{
+    color: #51C154;
+    font-weight: bold;
+}
+.reswind{
+    min-height: 6em;
+}
+#rostbutton{
+    width: 100px;
+    margin-top: 1em;
+}
+.wow{
+    color: #5196CC;
+    font-weight: bolder;
+    font-style: oblique;
+}
