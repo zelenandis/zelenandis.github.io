@@ -1,116 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>MY SITES</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/107787.png">
-	<style>
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		body{
-			background-color: #00b386;
-			color: white;
-			font-family: sans-serif;
-		}
-		h1, h2{
-			padding: 30px 20px;
-			margin: 0 30px 0 30px;
-		}
-		h1{
-			background-color: #00cc99;
-			border-bottom: 2px solid white;
-			min-width: 200px;
-			margin-bottom: 20px;
-		}
-		h2{
-			min-width: 200px;
-			background-color: #00cc99;
-			border-top: 2px solid white;
-			font-size: 12px;
-			font-weight: normal;
-			color: #009973;
-			letter-spacing: 1px;
-		}
-		.content, .empty{
-			padding: 15px 30px;
-			margin: 0 auto;
-		}
-		
-		a:link{ text-decoration: none; color: #fff; }
-		a:visited{ color: #ccc; }
-		a:visited img{ border-color: #ddd; }
-		a:hover{ color: yellow; }
-		a:hover img{ border-color: yellow; }
-		a:active{ color: red; }
-		a:active img{ border-color: red; }
-		
-		a{
-			font-weight: bold;
-		}	
-		.buttons{
-			display: inline-block;
-			border: 2px dotted #009973;
-			border-radius: 20px;
-			width: 200px;
-			min-height: 150px;
-			margin: 3% 1%;
-			padding: 20px 20px 20px 20px;
-		}
-		img{
-			border: 1px solid white;
-			border-radius: 9px;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
+	<title>MY SITES</title>
+	<script src="app.js"></script>
 </head>
-
 <body>
-	
-	<div><h1>HELLO AND WELCOME</h1></div>
-	
-	<div class="content">
-		<div>I can take you to...</div><br>
-		
-		<div class="buttons">
-			<a href="/cfish/index.html">... to CyberFishing website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--35 symbols-->
-			<img src="img/fishscreen.png" alt="oops, no picture loaded" width="200" height="150">
-			</a>
-		</div>
-		<div class="buttons">
-			<a href="/indfood/index.html">... to Indian Restaurant website&nbsp;&nbsp;&nbsp;<!--35 symbols-->
-			<img src="img/tikkascreen.png" alt="oops, no picture loaded" width="200" height="150">
-			</a>
-		</div>
-		<div class="buttons">
-			<a href="/contfut/index.html">... to random Contacts page&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--35 symbols-->
-			<img src="img/futscreen.png" alt="oops, no picture loaded" width="200" height="150">
-			</a>
-		</div>
-		<div class="buttons">
-			<a href="/emailelsw/index.html">... to some Elsweyr email-newsletter<!--36! symbols!!!-->
-			<img src="img/elswscreen.png" alt="oops, no picture loaded" width="200" height="150">
-			</a>
-		</div>
-		<div class="buttons">
-			<a href="/js_test/index.html">... to some small javascript things&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--35 symbols-->
-			<img src="img/jsscreen.png" alt="oops, no picture loaded" width="200" height="150">
-			</a>
-		</div>
-		<div class="buttons">
-			<a href="#">... to absolutely nothing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--35 symbols-->
-			<img src="img/navscreenclear.png" alt="oops, no picture loaded" width="200" height="150">
-			</a>
-		</div>
-		<br>
+	<!--maindiv-start-->
+	<div class="maindiv-start">
+		<button type="button" id="rueng"><a href="#">eng-ru</a></button>
+		<button type="button" id="niday"><a href="#">ni-day</a></button>
+
+		<h1>HELLO AND WELCOME</h1>
+		<p>Here you can find my newer and older works as the Front-end developer, please scroll below or press the star. Some of the pages will be re-done in future, as I get more skill. New works are coming soon.</p>
+		<div><a href="#main" id="downbtn">&#9734;</a></div>
 	</div>
+
+	<!--maindiv-skill-->
+	<div class="maindiv-skill">
+		<h2>SKILL PREVIEW</h2>
+
+		<div class="skillcell-wrap">
+
+		<div class="skillcell">
+			<img src="svg/html5.svg" alt="html5" id="htmpic">
+			<p>I can use this markup language for creating a base of my web-pages from scratch.</p>
+		</div>
+
+		<div class="skillcell">
+			<img src="svg/css5.svg" alt="css3">
+			<p>I also know how to use Cascading Style Sheets to make my pages look nicer, adding layout, colors and other decor.</p>
+		</div>
+
+		<div class="skillcell">
+			<img src="svg/js2.svg" id="jspic" alt="js">
+			<p>I am actively learning Javascript and applying its scripts to my pages, to make them more functional.</p>
+		</div>
+
+		</div>
+	</div>
+
+	<!--maindiv-main-->
+	<div class="maindiv-main" id="main">
+		<h2>MY MAIN WORKS</h2>
+
+		<a href="/indfood/index.html"><img src="img/tikkascreen.png" alt="screenshot"></a>
+		<ul>
+			<li><a href="/indfood/index.html">.</a></li>
+			<li><a href="#">.</a></li>
+			<li><a href="#">.</a></li>
+		</ul>
+		<p>Multiple-page website for an Indian restaraunt. It includes several navigation buttons at the top and contact details on each page.</p>
 	
-	<div class="empty">&nbsp;</div>
+		<!-- here the carousel content
+		<img src="pic2.png" alt="screenshot">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus tempor libero, nec iaculis libero rhoncus ut. Aenean hendrerit hendrerit lacus, vel euismod nibh vestibulum eu.</p>
 	
-	<div><h2>@zelenandis</h2></div>
-	
+		<img src="pic2.png" alt="screenshot">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus tempor libero, nec iaculis libero rhoncus ut. Aenean hendrerit hendrerit lacus, vel euismod nibh vestibulum eu.</p>
+		-->
+
+	</div>
+
+	<!--maindiv-more-->
+	<div class="maindiv-more">
+		<h2>MORE OF MY WORKS</h2>
+
+		<div class="morecell-wrap">
+
+			<a href="/emailelsw/index.html">
+				<div class="morecell">
+					<img src="img/elswscreen.png" alt="screenshot">
+					<p>A simple email template for customers, newsletter or something else</p>
+				</div>
+			</a>
+		
+			<a href="/cfish/index.html">
+				<div class="morecell">
+					<img src="img/fishscreen.png" alt="screenshot">
+					<p>A multi-page website for cyber-fishing amateurs</p>
+				</div>
+			</a>
+		
+			<a href="/contfut/index.html">
+				<div class="morecell">
+					<img src="img/futscreen.png" alt="screenshot">
+					<p>A test 'comments' page creation, from a psd template</p>
+				</div>
+			</a>
+
+			<a href="/js_test/index.html">
+				<div class="morecell">
+					<img src="img/jsscreen.png" alt="screenshot">
+					<p>Javascript: simple scripts by a beginner</p>
+				</div>
+			</a>
+		
+			<a href="#">
+				<div class="morecell">
+					<img src="pic3.png" alt="screenshot">
+					<p>Soon...</p>
+				</div>
+			</a>
+			
+			<a href="#">
+				<div class="morecell">
+					<img src="pic3.png" alt="screenshot">
+					<p>Soon...</p>
+				</div>
+			</a>
+
+			<a href="#">
+				<div class="morecell">
+					<img src="pic3.png" alt="screenshot">
+					<p>Soon...</p>
+				</div>
+			</a>
+			
+			<a href="#">
+				<div class="morecell">
+					<img src="pic3.png" alt="screenshot">
+					<p>Soon...</p>
+				</div>
+			</a>
+<!--
+			<a href="#">
+				<div class="morecell">
+					<img src="pic3.png" alt="screenshot">
+					<p>Soon...</p>
+				</div>
+			</a>    -->
+
+		</div>
+
+	</div>
+
+	<!--maindiv-footer-->
+	<div class="maindiv-footer">
+		<h3>&copy; zelenandis 2020-2021</h3>
+		<ul>
+			<li><a href="https://www.facebook.com/">no facebook</a></li>
+			<li><a href="https://vk.com/">no vkontakte</a></li>
+			<li><a href="https://www.linkedin.com/">no linkedin</a></li>
+			<li><a href="#">no nothing</a></li>
+		</ul>
+	</div>
 </body>
-	
 </html>
