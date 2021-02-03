@@ -1,0 +1,408 @@
+*{ margin-top: 0; }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #E7F0E7;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.maindiv-skill,
+.maindiv-main,
+.maindiv-more{
+    min-height: 90vh;
+    width: 90%;
+    margin: 5% auto;
+    box-shadow: 0px 0px 10px 10px #bbb;
+}
+.maindiv-skill h2,
+.maindiv-main h2,
+.maindiv-more h2{
+    text-align: center;
+    padding-top: 1.5em;
+    color: #007F60;
+}
+.maindiv-skill img,
+.maindiv-main img,
+.maindiv-more img,
+.maindiv-skill p,
+.maindiv-main p,
+.maindiv-more p{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+/*for small mobile screens first*/
+
+/* MAINDIV-START */
+.maindiv-start{
+    background-color: #00b386;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    min-height: 90vh;
+    text-align: center;
+}
+#rueng,
+#niday{
+    position: absolute;
+    top: 1em;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    padding: 0.5em 0em;
+    border: none;
+    background-color: #007F60;
+}
+#rueng a,
+#niday a{
+    padding: 0.5em 1em;
+    color: #00b386;
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: not-allowed;
+}
+#rueng:hover,
+#niday:hover{
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#rueng{
+    right: 6.5em;
+}
+#niday{
+    right: 1em;
+}
+#downbtn{
+    color: rgba(255, 255, 255, 0.61);
+    background-color: transparent;
+    position: absolute;
+    text-decoration: none;
+    top: 85%;
+    left: 50%;
+    font-size: 30px;
+    transform: translateX(-50%);
+    padding: 0 2em;
+    font-weight: bold;
+}
+#downbtn:hover{
+    color: yellow;
+}
+.maindiv-start h1{
+    padding-top: 20vh;
+}
+.maindiv-start p{
+    padding: 0 15% 0 15%;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+/* MAINDIV-SKILL */
+.maindiv-skill{
+    background-color: #E7F0E7;
+}
+.maindiv-skill img{
+    width: 3.5em;
+    height: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.maindiv-main h2{
+    color: white;
+}
+.maindiv-skill p{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding-left: 0.5em;
+    line-height: 1em;
+    text-indent: 1.5em;
+    font-size: 14px;
+    color: #007F60;
+}
+.skillcell{
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px #bbb;
+    min-height: 96px;
+}
+
+/* MAINDIV-MAIN */
+.maindiv-main{
+    background-image: linear-gradient(210deg, #EB33FF, #00FF2E);
+    color: white;
+}
+.maindiv-main img{
+    width: 70vw;
+    margin: 5vh auto 0 auto;
+    display: block;
+    padding: 0;
+    box-shadow: 0px 0px 10px 2px white;
+    transition-duration: 0.4s;
+}
+.maindiv-main p{
+    padding-bottom: 1em;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+.maindiv-main ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+}
+.maindiv-main ul li a{
+    padding: 0 9px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+.maindiv-main ul li a:hover{
+    color: yellow;
+}
+.maindiv-main a img:hover{
+    box-shadow: 0px 0px 10px 5px yellow;
+}
+
+/* MAINDIV-MORE */
+.maindiv-more{
+    background-color: #E7F0E7;
+    padding-bottom: 1em;
+}
+.maindiv-more a{
+    text-decoration: none;
+}
+.maindiv-more img{
+    width: auto;
+    height: 15vh;
+    padding: 4% 0 4% 4%;
+}
+.morecell{
+    margin: 0 1em 1em 1em;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px #bbb;
+    transition-duration: 0.4s;
+}
+.morecell p{
+    margin: 0.3em 0;
+    font-size: smaller;
+    color: #007F60;
+}
+.morecell:hover{
+    background-image: linear-gradient(210deg, #FCE0FF, #ADFFBC);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 6px #bbb;
+}
+
+/* MAINDIV-FOOTER */
+.maindiv-footer{
+    text-align: center;
+    min-height: 20vh;
+    background-color: #007558;
+    color: rgba(255, 255, 255, 0.61);
+    margin-bottom: 0;
+}
+.maindiv-footer h3{
+    padding-bottom: 1em;
+    background-color: #007F60;
+    padding-top: 1em;
+    font-weight: 100;
+}
+.maindiv-footer ul{
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+}
+.maindiv-footer ul li{
+    padding: 0.3em 0.3em 1em 0.3em;
+}
+.maindiv-footer ul li a{
+    padding: 0.3em;
+    color: rgba(255, 255, 255, 0.61);
+    text-decoration: none;
+    font-weight: 500;
+    transition-duration: 0.4s;
+}
+.maindiv-footer ul li a:hover{
+    text-shadow: 0px 8px 6px #004232;
+    color: white;
+}
+
+/* MEDIA QUERIES for common smaller mobiles */
+@media (min-width: 321px) {
+	.maindiv-start p{
+        font-size: 20px;
+        padding-top: 5%;
+        font-weight: lighter;
+        line-height: 1.8;
+    }
+    .maindiv-skill h2{
+        margin-bottom: 15%;
+    }
+    .skillcell{
+        padding-bottom: 5%;
+        padding-top: 5%;
+        margin-top: 10%;
+    }
+    .maindiv-main h2{
+        margin-bottom: 25%;
+    }
+    .maindiv-main p{
+        font-size: 115%;
+    }
+    .morecell p{
+        font-size: 108%;
+    }
+    .maindiv-footer ul li a{
+        font-size: 115%;
+    }
+}
+
+/* MEDIA QUERIES for tablets */
+@media (min-width: 650px) {
+    .maindiv-start h1{
+        font-size: 300%;
+    }
+    .maindiv-start p{
+        font-size: 30px;
+        line-height: 1.5;
+    }
+    #downbtn{
+        font-size: 50px;
+    }
+    .maindiv-skill,
+    .maindiv-main,
+    .maindiv-more{
+        min-height: 85vh;
+        width: 80%;
+        margin: 10% auto;
+        padding-bottom: 5%;
+    }
+    .maindiv-skill h2,
+    .maindiv-main h2,
+    .maindiv-more h2{
+    padding-top: 3em;
+    font-size: 200%;
+    }
+    .skillcell{
+        max-width: 500px;
+        margin: 0 auto 4% auto;
+    }
+    .skillcell p{
+        font-size: 140%;
+    }
+    .maindiv-skill h2{
+        margin-bottom: 5%;
+        padding-bottom: 1.5em;
+    }
+    .skillcell img{
+        width: 4.5em;
+    }
+    .maindiv-main img,
+    .maindiv-main p{
+        max-width: 500px;
+    }
+    .maindiv-main h2{
+        margin-bottom: 0;
+    }
+    .maindiv-main p{
+        font-size: 160%;
+    }
+    .maindiv-main li{
+        font-size: 200%;
+    }
+    .maindiv-more p{
+        font-size: 160%;
+    }
+    .morecell{
+        max-width: 500px;
+        margin: 5% auto;
+    }
+    .maindiv-footer ul li a{
+        font-size: 150%;
+    }
+}
+
+/* MEDIA QUERIES for desktop */
+@media (min-width: 800px) {
+    .maindiv-start h1{
+        font-weight: normal;
+    }
+    .maindiv-start p{
+        font-size: 25px;
+    }
+    .maindiv-skill h2,
+    .maindiv-main h2,
+    .maindiv-more h2{
+    padding-top: 2em;
+    font-size: 150%;
+    }
+    .skillcell p{
+        font-size: 100%;
+        padding: 1em 2em 1em 2em;
+        text-indent: 0;
+    }
+    .skillcell{
+        flex-direction: column-reverse;
+        max-width: 170px;
+        margin: 2%;
+        padding: 0;
+    }
+    .skillcell img{
+        padding-bottom: 1em;
+    }
+    #jspic{
+        padding-top: 2em;
+    }
+    .skillcell-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .maindiv-main img{
+        max-width: 400px;
+    }
+    .maindiv-main p{
+        font-size: 100%;
+        text-align: center;
+    }
+    .maindiv-more p{
+        font-size: 100%;
+        line-height: 1;
+    }
+    .morecell-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        margin: 0 5%;
+    }
+    .morecell{
+        max-height: 100px;
+        overflow: hidden;
+        margin: 0;
+    }
+    .morecell img{
+        max-width: 100px;
+        height: auto;
+    }
+    .maindiv-footer ul li{
+        font-size: 80%;
+        padding-bottom: 5em;
+    }
+    .maindiv-footer ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .maindiv-footer ul li a{
+        font-weight: 500;
+    }
+}
+
+/*MEDIA QUERIES for landscape */
+@media (orientation: landscape){
+    /**/
+}
