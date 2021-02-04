@@ -2,7 +2,7 @@ var hrs = new Date().getHours()
 var greet
 
 if (hrs <= 11){
-    greet = "GOOD MORNING "
+    greet = "GOOD MORNING"
 }
 if (hrs > 11 && hrs < 18){
     greet = "GOOD DAY"
