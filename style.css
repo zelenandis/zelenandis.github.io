@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans+Condensed:wght@300&display=swap');
+
 *{ margin-top: 0; }
 html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #E7F0E7;
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+h1,
+h2,
+h3{
+    font-family: 'Merriweather', serif;
 }
 .maindiv-skill,
 .maindiv-main,
@@ -13,14 +19,12 @@ body{
     min-height: 90vh;
     width: 90%;
     margin: 5% auto;
-    box-shadow: 0px 0px 10px 10px #bbb;
 }
 .maindiv-skill h2,
 .maindiv-main h2,
 .maindiv-more h2{
     text-align: center;
     padding-top: 1.5em;
-    color: #007F60;
 }
 .maindiv-skill img,
 .maindiv-main img,
@@ -32,12 +36,105 @@ body{
     padding-right: 7%;
 }
 
+/* COLOR SCHEME */
+
+/*blank BGs*/
+body,
+.maindiv-skill,
+.maindiv-more{
+    background-color: white;
+}
+/*box-shadows*/
+.maindiv-skill,
+.maindiv-main,
+.maindiv-more{
+    box-shadow: 0px 0px 10px 10px #ccc;
+}
+.skillcell,
+.morecell{
+    box-shadow: 0px 0px 10px 2px #ccc;
+}
+.morecell:hover{
+    box-shadow: 0px 0px 10px 6px #ccc;
+}
+/*start color*/
+.maindiv-start{
+    background-image: linear-gradient(to right top, #999999, #8c8c8c, #7f7f7f, #727272, #656565, #5d5d5d, #545454, #4c4c4c, #464646, #3f3f3f, #393939, #333333);
+}
+#rueng a,
+#niday a{
+    color: #4B4D52;
+}
+/*start color but for other things and darker*/
+.maindiv-skill h2,
+.maindiv-main h2,
+.maindiv-more h2,
+.maindiv-skill p,
+.morecell p{
+    color: #333;
+}
+#rueng,
+#niday,
+.maindiv-footer h3{
+    background-color: #333;
+}
+/*start color but for footer slightly darker*/
+.maindiv-footer{
+    background-color: #333;
+}
+/*footer's slightly darker color's shadow*/
+.maindiv-footer ul li a:hover{
+    text-shadow: 0px 8px 6px #222;
+}
+/*bright font color*/
+.maindiv-start,
+.maindiv-main h2,
+.maindiv-main,
+.maindiv-main ul li a,
+.morecell:hover,
+.maindiv-footer ul li a:hover{
+    color: #F1F1F1;
+}
+.maindiv-main img{
+    box-shadow: 0px 0px 10px 2px #F1F1F1;
+}
+/*hover color*/
+#rueng a:hover,
+#niday a:hover,
+#downbtn:hover,
+.maindiv-main ul li a:hover{
+    color: #ff0;
+}
+.maindiv-main a img:hover{
+    box-shadow: 0px 0px 10px 5px #ff0;
+}
+/*gradient pair (!!!pair)*/
+.maindiv-main{
+    /*background-image: linear-gradient(210deg, #A19191, #81A18A);*/
+    background-image: linear-gradient(to right, #333333, #7c526e, #de6b74, #ffa548, #ffff00);
+}
+.morecell:hover{
+    /*background-image: linear-gradient(210deg, #A19191, #81A18A);*/
+    background-image: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fdfaff, #fdf5ff, #ffefff, #ffdef6, #ffd2be, #ffdf6c, #ffff00);
+}
+/*the rest*/
+#rueng:hover,
+#niday:hover{
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#downbtn,
+.maindiv-footer,
+.maindiv-footer ul li a{
+    color: rgba(255, 255, 255, 0.61);
+}
+#downbtn{
+    background-color: transparent;
+}
+
 /*for small mobile screens first*/
 
 /* MAINDIV-START */
 .maindiv-start{
-    background-color: #00b386;
-    color: white;
     font-weight: bold;
     position: relative;
     min-height: 90vh;
@@ -51,21 +148,15 @@ body{
     transition-duration: 0.4s;
     padding: 0.5em 0em;
     border: none;
-    background-color: #007F60;
 }
 #rueng a,
 #niday a{
     padding: 0.5em 1em;
-    color: #00b386;
     text-decoration: none;
     font-weight: bolder;
 }
 #niday a{
     cursor: not-allowed;
-}
-#rueng:hover,
-#niday:hover{
-    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 #rueng{
     right: 6.5em;
@@ -74,8 +165,6 @@ body{
     right: 1em;
 }
 #downbtn{
-    color: rgba(255, 255, 255, 0.61);
-    background-color: transparent;
     position: absolute;
     text-decoration: none;
     bottom: 5%;
@@ -85,9 +174,6 @@ body{
     padding: 0 2em;
     font-weight: bold;
 }
-#downbtn:hover{
-    color: yellow;
-}
 .maindiv-start h1{
     padding: 15vh 1.5em 0 1.5em;
 }
@@ -95,22 +181,16 @@ body{
     padding: 0 15% 24% 15%;
     font-size: 16px;
     line-height: 1.3em;
-    display: table-cell;
-    vertical-align: bottom;
+    font-weight: lighter;
+    /*font-family: 'Raleway', sans-serif;*/
 }
 
 /* MAINDIV-SKILL */
-.maindiv-skill{
-    background-color: #E7F0E7;
-}
 .maindiv-skill img{
     width: 3.5em;
     height: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-}
-.maindiv-main h2{
-    color: white;
 }
 .maindiv-skill p{
     margin-top: 0.3em;
@@ -119,27 +199,21 @@ body{
     line-height: 1em;
     text-indent: 1.5em;
     font-size: 14px;
-    color: #007F60;
+    transition: 0.4s;
 }
 .skillcell{
     display: flex;
     margin: 1em;
     align-items: center;
-    box-shadow: 0px 0px 10px 2px #bbb;
     min-height: 96px;
 }
 
 /* MAINDIV-MAIN */
-.maindiv-main{
-    background-image: linear-gradient(210deg, #EB33FF, #00FF2E);
-    color: white;
-}
 .maindiv-main img{
     width: 70vw;
     margin: 5vh auto 0 auto;
     display: block;
     padding: 0;
-    box-shadow: 0px 0px 10px 2px white;
     transition-duration: 0.4s;
 }
 .maindiv-main p{
@@ -160,18 +234,10 @@ body{
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
-    color: white;
-}
-.maindiv-main ul li a:hover{
-    color: yellow;
-}
-.maindiv-main a img:hover{
-    box-shadow: 0px 0px 10px 5px yellow;
 }
 
 /* MAINDIV-MORE */
 .maindiv-more{
-    background-color: #E7F0E7;
     padding-bottom: 1em;
 }
 .maindiv-more a{
@@ -186,33 +252,25 @@ body{
     margin: 0 1em 1em 1em;
     display: flex;
     align-items: center;
-    box-shadow: 0px 0px 10px 2px #bbb;
     transition-duration: 0.4s;
     overflow: hidden;
 }
 .morecell p{
     margin: 0.3em 0;
     font-size: smaller;
-    color: #007F60;
 }
 .morecell:hover{
-    background-image: linear-gradient(210deg, #FCE0FF, #ADFFBC);
-    color: white;
     cursor: pointer;
-    box-shadow: 0px 0px 10px 6px #bbb;
 }
 
 /* MAINDIV-FOOTER */
 .maindiv-footer{
     text-align: center;
     min-height: 20vh;
-    background-color: #007558;
-    color: rgba(255, 255, 255, 0.61);
     margin-bottom: 0;
 }
 .maindiv-footer h3{
     padding-bottom: 1em;
-    background-color: #007F60;
     padding-top: 1em;
     font-weight: 100;
 }
@@ -227,14 +285,9 @@ body{
 }
 .maindiv-footer ul li a{
     padding: 0.3em;
-    color: rgba(255, 255, 255, 0.61);
     text-decoration: none;
     font-weight: 500;
     transition-duration: 0.4s;
-}
-.maindiv-footer ul li a:hover{
-    text-shadow: 0px 8px 6px #004232;
-    color: white;
 }
 
 /* MEDIA QUERIES mobiles */
@@ -362,7 +415,9 @@ body{
         font-weight: normal;
     }
     .maindiv-start p{
-        font-size: 25px;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 100;
     }
     .maindiv-skill h2,
     .maindiv-main h2,
