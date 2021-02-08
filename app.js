@@ -4,10 +4,10 @@ var greet
 if (hrs <= 11){
     greet = "GOOD MORNING"
 }
-if (hrs > 11 && hrs < 18){
+if (hrs > 11 && hrs <= 17){
     greet = "GOOD DAY"
 }
-if (hrs > 18 && hrs <= 21){
+if (hrs > 17 && hrs <= 21){
     greet = "GOOD EVENING"
 }
 if (hrs > 21){
