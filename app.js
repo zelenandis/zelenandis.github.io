@@ -1,7 +1,10 @@
 var hrs = new Date().getHours()
 var greet
 
-if (hrs <= 11){
+if (hrs >= 0 && <= 4){
+    greet = "GOOD NIGHT"
+}
+if (hrs >4 && <= 11){
     greet = "GOOD MORNING"
 }
 if (hrs > 11 && hrs <= 17){
